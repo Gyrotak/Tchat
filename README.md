@@ -14,6 +14,8 @@ Le script SQL porte le nom de : database.sql
 
 Pour configurer le T'Chat avec la base de donnée, vous pouvez modifier les valeurs dans le fichier config/database.php
 
+La configuration de Apache doit pointer sur le fichier index.php qui est à la racine.
+
 ## Liste des Routes
 
 Les routes du Tchat sont les suivants :
