@@ -15,7 +15,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
     $password = $_POST["password"];
     
     if (!$verif->checkEmail($email))
-        $error["email_error"] =  "L'adresse email inserer n'est pas valide !";
+        $error["email_error"] =  "L'adresse email inseré n'est pas valide !";
     if (!$verif->checkPassword($password))
         $error["password_error"] = "Le mot de passe doit faire 8 caractere au minimum !";
 
