@@ -73,18 +73,23 @@ class chat
     }
 
     /*
-     * Get Message with limit to 10 and by pages
+     * Get Message with limit to 10 by default and by pages
      * @parameter int($page_number)
      * @return array|null
      */
-    public function getMessagePerPage($page_number)
+    public function getMessagePerPage($page_number, $limit = 10)
     {
-        // if page == 1
-        // SELECT * FROM Products WHERE id BETWEEN 0 AND 10;
-        // else if > 1
-        // SELECT * FROM Products WHERE id BETWEEN 10 * (number_page - 1) + 1 and 10 * number_page;
-        // else
-        // null
+        $messages = [];
+        if ($page_number == 1) {
+            $query = "SELECT * FROM Products WHERE id BETWEEN 0 AND ". $limit;
+        }
+        else if ($page_number > 1) {
+            $query = "SELECT * FROM Products WHERE id BETWEEN ". $limit ." * (" . $number_page . " - 1) + 1 and " . $limit . " * " . $number_page;
+        }
+        $stmt = $this->db->prepare($query);
+        $stmt->execute();
+        $messages = $stmt->fetchAll();
+        return $messages;
     }
 
     /*                           
