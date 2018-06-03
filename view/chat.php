@@ -9,7 +9,7 @@
 <div class="">
                 <div class="panel panel-primary">
                     <div class="panel-heading" id="accordion">
-    <span class="glyphicon glyphicon-comment"></span> Chat (connecte en tant que <?= $_SESSION["email"]; ?>)
+    <span class="glyphicon glyphicon-comment"></span> Chat (connecté en tant que <?= $_SESSION["email"]; ?>)
     <div class="btn-group pull-right">
     <span onclick="location.reload();" class="glyphicon glyphicon-refresh"></span>
     </div>
