@@ -4,7 +4,7 @@ USE TChat;
 
 CREATE Table `User` (
        ID INT PRIMARY KEY AUTO_INCREMENT,
-       Pseudo Varchar(100) NOT NULL UNIQUE,
+       Email Varchar(100) NOT NULL UNIQUE,
        Password Varchar(255) NOT NULL,
        Connected INT NOT NULL,
        Created_at TIMESTAMP DEFAULT NOW(),
