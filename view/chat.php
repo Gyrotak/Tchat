@@ -36,7 +36,7 @@
                             </span>
                                 <div class="chat-body clearfix">
                                     <div class="header">
-               <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>$message['Created_at']; </small>
+               <small class=" text-muted"><span class="glyphicon glyphicon-time"></span><?= $message['Created_at']; ?></small>
                                         <strong class="pull-right primary-font"> <?= $_SESSION["email"]; ?> </strong>
                                     </div>
                                     <p><?= $message["Message"]; ?></p>
