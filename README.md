@@ -17,7 +17,7 @@ Pour configurer le T'Chat avec la base de donnée, vous pouvez modifier les vale
 La configuration de Apache doit pointer sur le fichier index.php qui est à la racine, et vous devez le rewrite module de Apache via la commande :
    ```sudo a2enmod rewrite``` 
 Vous aurez besoin de re-démmarer Apache2 après cette étape
-   ```sudo service apache2 restart
+   ```sudo service apache2 restart```
 
 
 ## Liste des Routes
