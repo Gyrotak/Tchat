@@ -31,8 +31,8 @@ class Chat
         $database_config = [
             "database_name" => "TChat",
             "host" => "127.0.0.1",
-            "user" => "TChat",
-            "password" => "TChat"
+            "user" => "",
+            "password" => ""
         ];
 
         $this->config = $database_config;
