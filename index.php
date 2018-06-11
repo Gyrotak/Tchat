@@ -28,7 +28,13 @@ $router->post('/', "Authentification@connect");
 $router->get('/Tchat', "TChat@index");
 $router->post('/Tchat', "TChat@send");
 $router->get('/TChat/deconnexion', "TChat@deconnexion");
+$router->get('/error_404', "Authentification@error");
 
-$router->run(); 
+try {
+    $router->run();
+} catch (\Exception $e) {
+    header("Location: /error_404");
+    exit;
+}
 
 ?>

@@ -64,6 +64,13 @@ class Authentification {
         }
         (new \App\Service\ViewLoad\ViewLoad())->load_view(dirname(__DIR__) . "/Views/Authentification.php", $error);
     }
+
+    /*
+     * View 404
+     */
+    public function error() {
+        (new \App\Service\ViewLoad\ViewLoad())->load_view(dirname(__DIR__) . "/Views/404.php");
+    }
 }
 
 ?>
