@@ -20,8 +20,8 @@ La configuration de Apache doit pointer sur le fichier index.php qui est à la r
 
 Les routes du Tchat sont les suivants :
 - "/" qui correspond a l'index
-- "/?section=chat" qui correspond a la page de communication entre les membres
-- "/?section=?" tout autre mot pouvant aller dans section sera redirige sur la page 404
+- "/TChat" qui correspond a la page de communication entre les membres mais qui redirigeras vers "/" si vous n'etes pas connecte
+- "/?" tout autre mot pouvant aller dans section sera redirige sur la page 404
 
 ## Fonctionnalité
 
